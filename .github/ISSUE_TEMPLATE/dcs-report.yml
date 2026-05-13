@@ -1,0 +1,19 @@
+name: DCS異常回報
+description: 回報 DCS 系統問題
+title: "[DCS異常] "
+labels: ["DCS", "待確認"]
+
+body:
+  - type: input
+    id: system
+    attributes:
+      label: 系統名稱
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: 問題描述
+    validations:
+      required: true
